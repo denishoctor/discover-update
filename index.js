@@ -24,6 +24,19 @@ app.get("/discover/preparing-for-a-puppy", (req, res) => {
   res.render("preparing-for-a-puppy");
 });
 
+app.get("/discover/preparing-for-a-puppy_files/schedule.html", (req, res) => {
+  res.redirect(
+    "https://app.acuityscheduling.com/schedule.php?owner=19197814&owner=19197814&appointmentType=category:New%20Pet%20Advice"
+  );
+});
+
+app.get(
+  "/discover/preparing-for-a-puppy_files/embed.js.download",
+  (req, res) => {
+    res.redirect("https://embed.acuityscheduling.com/js/embed.js");
+  }
+);
+
 // Fallback for other resource we don't have
 app.all("*", (req, res) => {
   const path = req.path;
