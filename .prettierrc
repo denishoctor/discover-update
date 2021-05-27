@@ -1,0 +1,5 @@
+{
+    "proseWrap": "always",
+    "htmlWhitespaceSensitivity": "ignore",
+    "tabWidth": 2
+}
