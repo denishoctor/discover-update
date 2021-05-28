@@ -1,5 +1,5 @@
 {
-    "proseWrap": "always",
-    "htmlWhitespaceSensitivity": "ignore",
-    "tabWidth": 2
+  "proseWrap": "always",
+  "htmlWhitespaceSensitivity": "css",
+  "tabWidth": 2
 }
