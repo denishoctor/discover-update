@@ -12,3 +12,4 @@
 - Partials often fetch images and stuff from `./` which is rewritten to a Google
   storage bucket on build time, dumb server redirects aren't perfect but work
   good enough.
+- TODO: eliminate all "back to top"s

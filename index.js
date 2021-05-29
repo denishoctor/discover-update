@@ -1,5 +1,6 @@
 const express = require("express");
 const handlebars = require("express-handlebars");
+const fs = require("fs");
 
 const app = express();
 
@@ -37,10 +38,21 @@ app.get(
   }
 );
 
+app.get("/", (req, res) => {
+  res.send(`<ul>
+    <li><a href="/discover/new-kitten-guide">new kitten guide</a></li>
+    <li><a href="/discover/new-puppy-guide">new puppy guide</a></li>
+    <li><a href="/discover/preparing-for-a-puppy">preparing for a puppy</a></li>
+  </ul>`);
+});
+
 // Fallback for other resource we don't have
 app.all("*", (req, res) => {
   const path = req.path;
-  if (path.includes("_files/"))
+  const isAsset = fs.existsSync(`./assets${path}`);
+
+  if (isAsset) res.redirect(`/assets${path}`);
+  else if (path.includes("_files/"))
     res.redirect(
       `https://storage.googleapis.com/petcircle-assets/images/blog/${
         path.split("_files/")[1]
