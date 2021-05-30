@@ -5,6 +5,7 @@
 - `ui-main.css` is in [`assets/`](./assets/).
 - Page partials are in [`views/`](./views/).
 - Anything else not mentioned are extra files used to help local development.
+- Maybe look at JSON-LD for SEO (can be used to create Google smart cards).
 
 ## Personal notes
 
