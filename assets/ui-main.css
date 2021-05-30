@@ -23632,7 +23632,6 @@ html > body {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  /* padding: 20px; */
   border: solid 1px #c6cfd0;
   border-radius: 5px;
 }
@@ -23657,8 +23656,6 @@ html > body {
   flex-direction: column;
   border-top: 1px solid #c6cfd0;
   padding: 20px;
-  /* padding-top: 10px; */
-  /* margin-top: 10px; */
 }
 
 .article-section-inner > :last-child {
@@ -23672,8 +23669,6 @@ html > body {
 }
 
 .article-col {
-  /* display: flex;
-  flex-direction */
   flex-basis: 50%;
 }
 
@@ -23687,7 +23682,6 @@ html > body {
 
 .article-col img {
   width: 100%;
-  /* max-width: 440px; */
   margin: 15px 0;
   border-radius: 4px;
 }
@@ -23696,7 +23690,6 @@ html > body {
   display: flex;
   flex-direction: column;
   background: #f5f6f8;
-  /* background: #fff; */
   border-radius: 4px;
   padding: 20px;
   margin-bottom: 15px;
@@ -23745,7 +23738,11 @@ html > body {
 
 .article-list {
   list-style: initial;
-  margin-left: 1em;
+  padding-left: 1em;
+}
+
+ol.article-list {
+  list-style: decimal;
 }
 
 .article-list > li {
