@@ -23661,6 +23661,10 @@ html > body {
   /* margin-top: 10px; */
 }
 
+.article-section-inner > :last-child {
+  margin-bottom: 0;
+}
+
 .article-row {
   display: flex;
   justify-content: center;
