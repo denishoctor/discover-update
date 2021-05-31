@@ -18,8 +18,16 @@
 - Add understandable alt text for images important to page content.
 - Ensure proper heading hierarchy (h1 > h2 > h3 > h4 > h5 > h6), descending by
   one step at a time. There should only be one `h1` on each page.
-- [Run a Lighthouse performance test](https://web.dev/measure/) to see what
-  aspects you can improve on.
+- Make sure to prioritise semantic HTML elements over their styling, so that
+  they make sense to web crawlers and accessibility software. Styling should
+  also be done based off element ID or class name (preferred), so that it is
+  detached from the element's meaning and you can use it on any element as
+  required. See
+  https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html
+  for more information.
+
+* [Run a Lighthouse performance test](https://web.dev/measure/) and other SEO
+  feedback tools to see what aspects you can improve on.
 
 ## Personal notes
 
