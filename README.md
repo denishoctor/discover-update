@@ -7,7 +7,7 @@
 - Anything else not mentioned are extra files used to help local development.
 - SEO content (meta tags) are declared in a fake `<seo>` block at the top of
   each partial. These need to be extracted out into the `<head>` element in
-  order to work properly.
+  order to work properly (not sure how your build system works).
 
 - Change `discover/preparing-for-a-puppy` to
   `discover/preparing-for-a-puppy-or-kitten` or similar, in order to get extra
