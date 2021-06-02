@@ -23596,12 +23596,7 @@ html > body {
 .article-content {
   width: 100%;
   max-width: 960px;
-}
-
-@media screen and (min-width: 1025px) {
-  .article-content {
-    margin-right: 30px;
-  }
+  margin-right: 30px;
 }
 
 .article-content *,
@@ -23618,6 +23613,7 @@ html > body {
 .ui-discovery #main.discover #rightPanel .article-header .title-1 {
   font-size: 50px;
   font-weight: 700;
+  line-height: 1;
 }
 
 #main.discover .title-2 {
@@ -23669,6 +23665,8 @@ html > body {
 }
 
 .article-col {
+  display: flex;
+  flex-direction: column;
   flex-basis: 50%;
 }
 
@@ -23682,6 +23680,7 @@ html > body {
 
 .article-col img {
   width: 100%;
+  max-width: 100% !important;
   margin: 15px 0;
   border-radius: 4px;
 }
@@ -23760,8 +23759,32 @@ ol.article-list {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1025px) {
+  .article-wrapper,
+  .article-row {
+    flex-direction: column;
+  }
+
+  .article-toc {
+    margin-bottom: 30px;
+  }
+
+  .article-toc-card {
+    max-height: 100%;
+  }
+
+  div[class*=article] a>* {
+    max-width: 100% !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #main.discover .title-1 {
     font-size: 24px;
+  }
+
+  #article > * {
+    margin: 0 !important;
+    padding: 20px 3%;
   }
 }
