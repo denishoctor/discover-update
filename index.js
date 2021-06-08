@@ -13,6 +13,10 @@ app.engine(
 app.set("view engine", "handlebars");
 app.use("/assets", express.static("assets"));
 
+app.get("/discover/kitten-landing-page", (req, res) => {
+  res.render("kitten-landing-page");
+});
+
 app.get("/discover/new-kitten-guide", (req, res) => {
   res.render("new-kitten-guide");
 });
@@ -43,6 +47,7 @@ app.get("/", (req, res) => {
     <li><a href="/discover/new-kitten-guide">new kitten guide</a></li>
     <li><a href="/discover/new-puppy-guide">new puppy guide</a></li>
     <li><a href="/discover/preparing-for-a-puppy">preparing for a puppy</a></li>
+    <li><a href="/discover/kitten-landing-page">kitten landing page</a></li>
   </ul>`);
 });
 

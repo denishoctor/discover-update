@@ -23611,8 +23611,8 @@ html > body {
 
 #main.discover .title-1,
 .ui-discovery #main.discover #rightPanel .article-header .title-1 {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 50px !important;
+  font-weight: 700 !important;
   line-height: 1;
 }
 
@@ -23773,18 +23773,127 @@ ol.article-list {
     max-height: 100%;
   }
 
-  div[class*=article] a>* {
+  div[class*="article"] a > * {
     max-width: 100% !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   #main.discover .title-1 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   #article > * {
     margin: 0 !important;
     padding: 20px 3%;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
+  .landing-header {
+    padding: 0 20px;
+  }
+
+  .landing-header h1 {
+    margin-top: 0 !important;
+    padding-top: 0;
+  }
+
+  .vet-tips-discover #content .landing-header-paragraph {
+    font-size: 16px !important;
+  }
+
+  .landing-article p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* New landing pages styles */
+
+.landing-title {
+  color: #007483 !important;
+}
+
+.landing-header {
+  display: flex;
+  align-items: center;
+}
+
+.landing-header-list li {
+  font-size: 25px;
+  color: #01abb8;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.vet-tips-discover #content .landing-header-paragraph {
+  font-size: 18px !important;
+  line-height: unset !important;
+  max-width: 700px;
+  margin-top: 10px;
+}
+
+.landing-header-flavour {
+  max-width: 300px;
+  height: 100%;
+}
+
+.landing-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-banner {
+  margin: 30px 0 !important;
+}
+
+.landing-banner.shrunk {
+  max-width: 900px;
+}
+
+.landing-article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.landing-article h3 {
+  font-size: 22px !important;
+  margin-bottom: 10px;
+}
+
+.landing-article p {
+  color: #000 !important;
+}
+
+.landing-article u {
+  color: #10b3b1;
+}
+
+.landing-article-author {
+  display: flex;
+  align-items: center;
+}
+
+.landing-article-author-img {
+  height: 48px !important;
+  width: 48px !important;
+  margin: 0 10px 0 0 !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.landing-article-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  .landing-header-flavour {
+    max-width: 200px;
   }
 }
