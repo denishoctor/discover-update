@@ -13,20 +13,20 @@ app.engine(
 app.set("view engine", "handlebars");
 app.use("/assets", express.static("assets"));
 
-app.get("/discover/kitten-landing-page", (req, res) => {
-  res.render("kitten-landing-page");
+app.get("/collections/new-kitten", (req, res) => {
+  res.render("collections/new-kitten");
 });
 
 app.get("/discover/new-kitten-guide", (req, res) => {
-  res.render("new-kitten-guide");
+  res.render("discover/new-kitten-guide");
 });
 
 app.get("/discover/new-puppy-guide", (req, res) => {
-  res.render("new-puppy-guide");
+  res.render("discover/new-puppy-guide");
 });
 
 app.get("/discover/preparing-for-a-puppy", (req, res) => {
-  res.render("preparing-for-a-puppy");
+  res.render("discover/preparing-for-a-puppy");
 });
 
 app.get("/discover/preparing-for-a-puppy_files/schedule.html", (req, res) => {
@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
     <li><a href="/discover/new-kitten-guide">new kitten guide</a></li>
     <li><a href="/discover/new-puppy-guide">new puppy guide</a></li>
     <li><a href="/discover/preparing-for-a-puppy">preparing for a puppy</a></li>
-    <li><a href="/discover/kitten-landing-page">kitten landing page</a></li>
+    <li><a href="/collections/new-kitten">kitten landing page</a></li>
   </ul>`);
 });
 
