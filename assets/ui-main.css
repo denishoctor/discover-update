@@ -23789,7 +23789,8 @@ ol.article-list {
   }
 
   .sm-hidden {
-    display: none;
+    display: none !important;
+    visibility: hidden !important;
   }
 
   .landing-header {
@@ -23811,6 +23812,13 @@ ol.article-list {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .sm-only {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
 /* New landing pages styles */
 
 .landing-title {
@@ -23825,9 +23833,8 @@ ol.article-list {
 .landing-header-list li {
   font-size: 25px;
   color: #01abb8;
-  text-decoration: underline;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .vet-tips-discover #content .landing-header-paragraph {
