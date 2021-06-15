@@ -17,6 +17,10 @@ app.get("/collections/new-kitten", (req, res) => {
   res.render("collections/new-kitten");
 });
 
+app.get("/collections/new-puppy", (req, res) => {
+  res.render("collections/new-puppy");
+});
+
 app.get("/discover/new-kitten-guide", (req, res) => {
   res.render("discover/new-kitten-guide");
 });
@@ -48,6 +52,7 @@ app.get("/", (req, res) => {
     <li><a href="/discover/new-puppy-guide">new puppy guide</a></li>
     <li><a href="/discover/preparing-for-a-puppy">preparing for a puppy</a></li>
     <li><a href="/collections/new-kitten">kitten landing page</a></li>
+    <li><a href="/collections/new-puppy">puppy landing page</a></li>
   </ul>`);
 });
 
