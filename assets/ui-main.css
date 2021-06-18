@@ -23838,10 +23838,11 @@ ol.article-list {
 }
 
 .vet-tips-discover #content .landing-header-paragraph {
-  font-size: 18px !important;
+  font-size: 24px !important;
   line-height: unset !important;
   max-width: 700px;
   margin-top: 10px;
+  color: #000 !important;
 }
 
 .landing-header-flavour {
