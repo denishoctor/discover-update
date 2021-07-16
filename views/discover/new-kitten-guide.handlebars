@@ -66,7 +66,11 @@
 
     <div id="article">
       <article id="rightPanel">
-        <header class="article-header copy">
+        <header
+          class="article-header copy"
+          itemscope
+          itemtype="https://schema.org/Article"
+        >
           <p class="edit-details" style="margin-bottom: 30px">
             <a
               href="https://storage.googleapis.com/petcircle-assets/content/articles/new-kitten-starter-guide-web.pdf"
@@ -76,20 +80,23 @@
             </a>
           </p>
 
-          <h1 class="title-1" id="top">
+          <h1 class="title-1" id="top" itemprop="name">
             New Kitten Guide
           </h1>
 
           <div class="article-date">
             Last updated
-            <time datetime="2021-02-24">24 February, 2021</time>
+            <time datetime="2021-02-24" itemprop="datePublished">24 February,
+              2021</time>
           </div>
 
           <p>
             <b>
-              This article is written by Pet Circle veterinarian,
+              This article is written by
+              <span itemprop="publisher">Pet Circle</span>
+              veterinarian,
               <a href="https://storage.googleapis.com/discover/author">
-                <span id="article-author">
+                <span id="article-author" itemprop="author">
                   Dr Kimberley Chainey, BVSc (Hons)
                 </span>
               </a>
@@ -105,94 +112,46 @@
             </cite>
           </blockquote>
 
+          <div
+            style="display: flex; display: contents; flex-direction: column"
+            itemprop="description"
+          >
+            <p>
+              Bringing home a new furry friend is an exciting time! It can also
+              be overwhelming, especially if you're a first time kitten parent.
+            </p>
+            <p>
+              <em>
+                How often do I need to worm my kitten?
+                <br />
+                Which food is the best for kittens?
+                <br />
+                When does a kitten need to be microchipped and vaccinated?
+              </em>
+            </p>
+            <p>
+              We'll answer all these questions and more in our comprehensive new
+              kitten guide. Grab a cuppa and settle in with your new family
+              member as we delve into the exciting world of feline ownership!
+            </p>
+          </div>
+
           <p>
-            Bringing home a new furry friend is an exciting time! It can also be
-            overwhelming, especially if you're a first time kitten parent.
+            And don't forget, we offer a free
+            <a href="https://storage.googleapis.com/discover/vet-pet-plan">Vet
+              Pet Plan service</a>
+            if you want some paw-sonalised product recommendations and extra
+            kitten care advice!
           </p>
+
           <p>
-            <em>
-              How often do I need to worm my kitten?
-              <br />
-              Which food is the best for kittens?
-              <br />
-              When does a kitten need to be microchipped and vaccinated?
-            </em>
-          </p>
-          <p>
-            We'll answer all these questions and more in our comprehensive new
-            kitten guide. Grab a cuppa and settle in with your new family member
-            as we delve into the exciting world of feline ownership!
+            Still deciding whether to get a kitten? Discover if you are
+            <a href="#ready">ready for a new kitten</a>
+            and get the expert advice you need to choose and give them a Better
+            Start.
           </p>
 
           <div class="row">
-            <div class="col-sm-6">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="read-more-link article-read-more">
-                    <b>
-                      Need supplies for your new kitten?
-                    </b>
-                    Check out our
-                    <a href="https://storage.googleapis.com/the-kitten-box">
-                      Kitten Starter Pack
-                    </a>
-                    , - a complete value pack put together by our vets
-                    containing premium food, parasite prevention, toys, treats,
-                    training aids, bedding, and more! Filled with up to $207
-                    worth of products, our discounted price (starting at $129)
-                    makes for incredible value! This hamper is also purchasable
-                    in a smaller
-                    <a
-                      href="https://storage.googleapis.com/product/the-kitten-everyday-box"
-                    >
-                      Everyday Box
-                    </a>
-                    for ongoing maintenance.
-                  </p>
-                </div>
-
-                <div class="col-sm-6">
-                  <p class="edit-details" style="margin-bottom: 30px">
-                    <a
-                      href="https://www.petcircle.com.au/product/the-kitten-starter-box"
-                      class="article-button"
-                    >
-                      The Kitten Starter Box
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://www.petcircle.com.au/product/the-kitten-starter-box"
-                    >
-                      <img
-                        src="./new-kitten-guide_files/the-kitten-starter-box.png"
-                        alt=""
-                      />
-                    </a>
-                  </p>
-                </div>
-
-                <div class="col-sm-6">
-                  <p class="edit-details" style="margin-bottom: 30px">
-                    <a
-                      href="https://www.petcircle.com.au/product/the-kitten-everyday-box"
-                      class="article-button"
-                    >
-                      The Kitten Everyday Box
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://www.petcircle.com.au/product/the-kitten-everyday-box"
-                    >
-                      <img
-                        src="./new-kitten-guide_files/the-kitten-everyday-box.png"
-                        alt=""
-                      />
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <div class="col-sm-6">
               <iframe
                 title="New Kitten? 10 things you NEED to know! - on YouTube"
@@ -215,128 +174,128 @@
               </h3>
               <ul class="article-toc-list">
                 <li>
-                  <a href="#ready">
-                    1. Are you ready for a kitten?
-                  </a>
-                </li>
-
-                <li>
                   <a href="#shop">
-                    2. New kitten shopping list
+                    1. New kitten shopping list
                   </a>
                 </li>
 
                 <li>
                   <a href="#bring">
-                    3. Bringing a new kitten home
+                    2. Bringing a new kitten home
                   </a>
                 </li>
 
                 <li>
                   <a href="#indoor">
-                    4. Indoor, outdoor or both?
+                    3. Indoor, outdoor or both?
                   </a>
                 </li>
 
                 <li>
                   <a href="#sleep">
-                    5. How much sleep does your kitten need?
+                    4. How much sleep does your kitten need?
                   </a>
                 </li>
 
                 <li>
                   <a href="#microchipping">
-                    6. Microchipping and registering your kitten
+                    5. Microchipping and registering your kitten
                   </a>
                 </li>
 
                 <li>
                   <a href="#vaccinations">
-                    7. Vaccinations - what, when and how many
+                    6. Vaccinations - what, when and how many
                   </a>
                 </li>
 
                 <li>
                   <a href="#worming">
-                    8. Worming, flea and tick prevention for kittens
+                    7. Worming, flea and tick prevention for kittens
                   </a>
                 </li>
 
                 <li>
                   <a href="#desexing">
-                    9. Desexing your kitten
+                    8. Desexing your kitten
                   </a>
                 </li>
 
                 <li>
                   <a href="#dental">
-                    10. How to look after your kitten's teeth
+                    9. How to look after your kitten's teeth
                   </a>
                 </li>
 
                 <li>
                   <a href="#insurance">
-                    11. Pet insurance - is it worth it?
+                    10. Pet insurance - is it worth it?
                   </a>
                 </li>
 
                 <li>
                   <a href="#emergency">
-                    12. When to take your kitten to the vet
+                    11. When to take your kitten to the vet
                   </a>
                 </li>
 
                 <li>
                   <a href="#nutrition">
-                    13. What to feed your kitten
+                    12. What to feed your kitten
                   </a>
                 </li>
 
                 <li>
                   <a href="#food">
-                    13.1. Choosing the right food
+                    12.1. Choosing the right food
                   </a>
                 </li>
 
                 <li>
                   <a href="#wet">
-                    13.2. Should I wet wet, dry or both?
+                    12.2. Should I wet wet, dry or both?
                   </a>
                 </li>
 
                 <li>
                   <a href="#howmuch">
-                    13.3. When and how much to feed
+                    12.3. When and how much to feed
                   </a>
                 </li>
 
                 <li>
                   <a href="#dangerous">
-                    13.4. Can I feed my kitten....? Dangerous foods for kittens
+                    12.4. Can I feed my kitten....? Dangerous foods for kittens
                   </a>
                 </li>
 
                 <li>
                   <a href="#catify">
-                    14. How to catify your home
+                    13. How to catify your home
                   </a>
                 </li>
 
                 <li>
                   <a href="#training">
-                    15. Toilet training
+                    14. Toilet training
                   </a>
                 </li>
 
                 <li>
                   <a href="#litter">
-                    15.1. Which cat litter is best?
+                    14.1. Which cat litter is best?
                   </a>
                 </li>
 
                 <li>
                   <a href="#grooming">
-                    16. Grooming your kitten
+                    15. Grooming your kitten
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#ready">
+                    Are you ready for a kitten?
                   </a>
                 </li>
 
@@ -350,152 +309,8 @@
           <div class="article-content copy">
             <details class="article-section" open>
               <summary>
-                <h2 id="ready" class="title-1">
-                  1. Are you ready for a kitten?
-                </h2>
-              </summary>
-
-              <div class="article-section-inner">
-                <div class="article-row">
-                  <div class="article-col">
-                    <p>
-                      While the desire to hear the pitter patter of little
-                      kitten feet can be strong, it's important to
-                      <em>
-                        paws
-                      </em>
-                      and make sure that now is the right time. While cats are
-                      renowned for being independant creatures, they still
-                      require plenty of time, attention and care. The time you
-                      invest in your kitten when they're young will ultimately
-                      pay off in the long run. And by long run, we mean up to 20
-                      years! That's right, some cats have been known to live as
-                      long as 18 - 20+ years.
-                    </p>
-
-                    <h2>
-                      Where to look and what to look for
-                    </h2>
-
-                    <p>
-                      If you choose to go down the route of obtaining your
-                      kitten from a breeder, be selective about who you contact.
-                      While less common than puppy farms, kitten farms do
-                      operate in Australia and should be avoided at all costs. A
-                      kitten farm is a large scale breeding operation where
-                      large numbers of cats are kept in inhumane, intensive
-                      conditions (eg. caged). Kitten farms are run purely with a
-                      focus on profit at the expense of the cats' wellbeing and
-                      are widely condemned by veterinarians and animal welfare
-                      groups.
-                    </p>
-
-                    <p>
-                      <b>
-                        What does a 'responsible' breeder look like?
-                      </b>
-                      - A responsible cat breeder will put the health and
-                      wellbeing of their breeding queens first. They ensure that
-                      the cats and kittens are fed a good quality diet and kept
-                      up to date with all healthcare needs. Good breeders also
-                      screen cats for any known inherited defects prior to
-                      breeding to avoid passing these on to the kittens.
-                      Wherever possible if you are considering purchasing a
-                      kitten from a breeder, ask to come and visit and meet them
-                      and the parents in person. Not only will meeting the
-                      parents and kittens give you a better idea of their
-                      temperament, it will also allow you to gauge the kind of
-                      environment your kitten is being bred and raised in.
-                    </p>
-
-                    <p>
-                      When viewing a kitten, ask the breeder for evidence of
-                      their microchipping and vaccination status, and check how
-                      often they have been wormed.
-                    </p>
-                  </div>
-
-                  <div class="article-col">
-                    <img
-                      src="./new-kitten-guide_files/kitten-care-feature1.jpg"
-                      alt=""
-                    />
-                    <div class="article-special-block">
-                      <h6>
-                        Adopt; don't shop
-                      </h6>
-
-                      <p>
-                        Every year in Australia thousands of dogs and cats are
-                        surrendered to animal shelters and pounds, with many of
-                        these animals euthanized because a suitable home cannot
-                        be found.
-                      </p>
-
-                      <p>
-                        Before heading to a pet store or breeder, consider
-                        whether you could instead offer a loving home to a puppy
-                        or adult dog in need. Cats, kittens and other pets are
-                        available for adoption from the
-                        <a href="https://www.rspca.org.au/">
-                          RSPCA
-                        </a>
-                        ,
-                        <a href="https://www.awla.org.au/">
-                          Animal Welfare League
-                        </a>
-                        ,
-                        <a href="https://www.petrescue.com.au/">
-                          PetRescue
-                        </a>
-                        and other local rescue organisations.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <h3>
-                  Why not check out
-                  <a
-                    href="https://thepetspot.com.au/"
-                    style="text-decoration: underline;"
-                  >
-                    The Pet Spot
-                  </a>
-                  ?
-                </h3>
-                <p>
-                  The Pet Spot focuses on promoting
-                  <b>
-                    verified, ethical breeders.
-                  </b>
-                  It brings transparency to the process of finding a puppy, and
-                  is the first Australian marketplace to use strict vetting
-                  processes that helps simplify finding a trusted breeder. This
-                  provides peace of mind that the pets purchased have been
-                  raised in loving, nurturing conditions.
-                </p>
-                <p>
-                  The PETspot is also the first platform to provide cat breeder
-                  reviews. This gives the pet community a voice, with each user
-                  able to review recent experiences with breeders, shelters, and
-                  services.
-                </p>
-
-                <a
-                  target="_blank"
-                  href="https://thepetspot.com.au/"
-                  class="article-button"
-                >
-                  Visit PETspot's Website
-                </a>
-              </div>
-            </details>
-
-            <details class="article-section" open>
-              <summary>
                 <h2 id="shop" class="title-1">
-                  2. New kitten shopping list
+                  1. New kitten shopping list
                 </h2>
               </summary>
 
@@ -590,6 +405,72 @@
                   </ul>
                 </div>
 
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="read-more-link article-read-more">
+                      <b>
+                        Need supplies for your new kitten?
+                      </b>
+                      Check out our
+                      <a href="https://storage.googleapis.com/the-kitten-box">
+                        Kitten Starter Pack
+                      </a>
+                      , - a complete value pack put together by our vets
+                      containing premium food, parasite prevention, toys,
+                      treats, training aids, bedding, and more! Filled with up
+                      to $207 worth of products, our discounted price (starting
+                      at $129) makes for incredible value! This hamper is also
+                      purchasable in a smaller
+                      <a
+                        href="https://storage.googleapis.com/product/the-kitten-everyday-box"
+                      >
+                        Everyday Box
+                      </a>
+                      for ongoing maintenance.
+                    </p>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <p class="edit-details" style="margin-bottom: 30px">
+                      <a
+                        href="https://www.petcircle.com.au/product/the-kitten-starter-box"
+                        class="article-button"
+                      >
+                        The Kitten Starter Box
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://www.petcircle.com.au/product/the-kitten-starter-box"
+                      >
+                        <img
+                          src="./new-kitten-guide_files/the-kitten-starter-box.png"
+                          alt=""
+                        />
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <p class="edit-details" style="margin-bottom: 30px">
+                      <a
+                        href="https://www.petcircle.com.au/product/the-kitten-everyday-box"
+                        class="article-button"
+                      >
+                        The Kitten Everyday Box
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://www.petcircle.com.au/product/the-kitten-everyday-box"
+                      >
+                        <img
+                          src="./new-kitten-guide_files/the-kitten-everyday-box.png"
+                          alt=""
+                        />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
                 <p class="read-more-link article-read-more">
                   Want to know more? Read
                   <a
@@ -605,7 +486,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="bring" class="title-1">
-                  3. What to do when you first bring your kitten home
+                  2. What to do when you first bring your kitten home
                 </h2>
               </summary>
 
@@ -738,7 +619,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="indoor" class="title-1">
-                  4. Should you keep your kitten Indoors, Outdoors or both?
+                  3. Should you keep your kitten Indoors, Outdoors or both?
                 </h2>
               </summary>
 
@@ -851,7 +732,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="sleep" class="title-1">
-                  5. How much should my kitten sleep?
+                  4. How much should my kitten sleep?
                 </h2>
               </summary>
 
@@ -1057,7 +938,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="microchipping" class="title-1">
-                  6. Microchipping and registration
+                  5. Microchipping and registration
                 </h2>
               </summary>
 
@@ -1109,7 +990,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="vaccinations" class="title-1">
-                  7. Vaccinations
+                  6. Vaccinations
                 </h2>
               </summary>
 
@@ -1170,7 +1051,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="worming" class="title-1">
-                  8. Parasite Prevention
+                  7. Parasite Prevention
                 </h2>
               </summary>
 
@@ -1937,7 +1818,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="desexing" class="title-1">
-                  9. Desexing
+                  8. Desexing
                 </h2>
               </summary>
 
@@ -1988,7 +1869,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="dental" class="title-1">
-                  10. Dental care
+                  9. Dental care
                 </h2>
               </summary>
 
@@ -2059,7 +1940,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="insurance" class="title-1">
-                  11. Pet insurance
+                  10. Pet insurance
                 </h2>
               </summary>
 
@@ -2142,7 +2023,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="emergency" class="title-1">
-                  12. Emergencies and what to do if your kitten is unwell
+                  11. Emergencies and what to do if your kitten is unwell
                 </h2>
               </summary>
 
@@ -2186,7 +2067,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="nutrition" class="title-1">
-                  13. Nutrition
+                  12. Nutrition
                 </h2>
               </summary>
 
@@ -2198,7 +2079,7 @@
                 <br />
 
                 <h3 id="food" class="title-2">
-                  13.1. Choosing the right food
+                  12.1. Choosing the right food
                 </h3>
 
                 <p>
@@ -2500,7 +2381,7 @@
                 </p>
 
                 <h3 id="wet" class="title-1">
-                  13.2. Should I feel my kitten wet or dry food, or both?
+                  12.2. Should I feel my kitten wet or dry food, or both?
                 </h3>
 
                 <p>
@@ -2722,7 +2603,7 @@
                 </p>
 
                 <h3 id="howmuch" class="title-1">
-                  13.3. When and how much to feed?
+                  12.3. When and how much to feed?
                 </h3>
 
                 <p>
@@ -2804,7 +2685,7 @@
                 </p>
 
                 <h3 id="dangerous" class="title-1">
-                  13.4. Treats for Kittens
+                  12.4. Treats for Kittens
                 </h3>
 
                 <p>
@@ -2986,7 +2867,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="catify" class="title-1">
-                  14. How to
+                  13. How to
                   <em>
                     catify
                   </em>
@@ -3279,7 +3160,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="training" class="title-1">
-                  15. Toilet Training
+                  14. Toilet Training
                 </h2>
               </summary>
 
@@ -3329,7 +3210,7 @@
                 </p>
 
                 <h2 id="litter" class="title-1">
-                  15.1. Which cat litter is best for kittens?
+                  14.1. Which cat litter is best for kittens?
                 </h2>
 
                 <p>
@@ -3510,7 +3391,7 @@
             <details class="article-section" open>
               <summary>
                 <h2 id="grooming" class="title-1">
-                  16. Grooming your kitten
+                  15. Grooming your kitten
                 </h2>
               </summary>
 
@@ -3669,6 +3550,150 @@
                   can set your kitten up for many happy years as a loved and
                   cherished family member.
                 </p>
+              </div>
+            </details>
+
+            <details class="article-section" open>
+              <summary>
+                <h2 id="ready" class="title-1">
+                  Are you ready for a kitten?
+                </h2>
+              </summary>
+
+              <div class="article-section-inner">
+                <div class="article-row">
+                  <div class="article-col">
+                    <p>
+                      While the desire to hear the pitter patter of little
+                      kitten feet can be strong, it's important to
+                      <em>
+                        paws
+                      </em>
+                      and make sure that now is the right time. While cats are
+                      renowned for being independant creatures, they still
+                      require plenty of time, attention and care. The time you
+                      invest in your kitten when they're young will ultimately
+                      pay off in the long run. And by long run, we mean up to 20
+                      years! That's right, some cats have been known to live as
+                      long as 18 - 20+ years.
+                    </p>
+
+                    <h2>
+                      Where to look and what to look for
+                    </h2>
+
+                    <p>
+                      If you choose to go down the route of obtaining your
+                      kitten from a breeder, be selective about who you contact.
+                      While less common than puppy farms, kitten farms do
+                      operate in Australia and should be avoided at all costs. A
+                      kitten farm is a large scale breeding operation where
+                      large numbers of cats are kept in inhumane, intensive
+                      conditions (eg. caged). Kitten farms are run purely with a
+                      focus on profit at the expense of the cats' wellbeing and
+                      are widely condemned by veterinarians and animal welfare
+                      groups.
+                    </p>
+
+                    <p>
+                      <b>
+                        What does a 'responsible' breeder look like?
+                      </b>
+                      - A responsible cat breeder will put the health and
+                      wellbeing of their breeding queens first. They ensure that
+                      the cats and kittens are fed a good quality diet and kept
+                      up to date with all healthcare needs. Good breeders also
+                      screen cats for any known inherited defects prior to
+                      breeding to avoid passing these on to the kittens.
+                      Wherever possible if you are considering purchasing a
+                      kitten from a breeder, ask to come and visit and meet them
+                      and the parents in person. Not only will meeting the
+                      parents and kittens give you a better idea of their
+                      temperament, it will also allow you to gauge the kind of
+                      environment your kitten is being bred and raised in.
+                    </p>
+
+                    <p>
+                      When viewing a kitten, ask the breeder for evidence of
+                      their microchipping and vaccination status, and check how
+                      often they have been wormed.
+                    </p>
+                  </div>
+
+                  <div class="article-col">
+                    <img
+                      src="./new-kitten-guide_files/kitten-care-feature1.jpg"
+                      alt=""
+                    />
+                    <div class="article-special-block">
+                      <h6>
+                        Adopt; don't shop
+                      </h6>
+
+                      <p>
+                        Every year in Australia thousands of dogs and cats are
+                        surrendered to animal shelters and pounds, with many of
+                        these animals euthanized because a suitable home cannot
+                        be found.
+                      </p>
+
+                      <p>
+                        Before heading to a pet store or breeder, consider
+                        whether you could instead offer a loving home to a puppy
+                        or adult dog in need. Cats, kittens and other pets are
+                        available for adoption from the
+                        <a href="https://www.rspca.org.au/">
+                          RSPCA
+                        </a>
+                        ,
+                        <a href="https://www.awla.org.au/">
+                          Animal Welfare League
+                        </a>
+                        ,
+                        <a href="https://www.petrescue.com.au/">
+                          PetRescue
+                        </a>
+                        and other local rescue organisations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <h3>
+                  Why not check out
+                  <a
+                    href="https://thepetspot.com.au/"
+                    style="text-decoration: underline;"
+                  >
+                    The Pet Spot
+                  </a>
+                  ?
+                </h3>
+                <p>
+                  The Pet Spot focuses on promoting
+                  <b>
+                    verified, ethical breeders.
+                  </b>
+                  It brings transparency to the process of finding a puppy, and
+                  is the first Australian marketplace to use strict vetting
+                  processes that helps simplify finding a trusted breeder. This
+                  provides peace of mind that the pets purchased have been
+                  raised in loving, nurturing conditions.
+                </p>
+                <p>
+                  The PETspot is also the first platform to provide cat breeder
+                  reviews. This gives the pet community a voice, with each user
+                  able to review recent experiences with breeders, shelters, and
+                  services.
+                </p>
+
+                <a
+                  target="_blank"
+                  href="https://thepetspot.com.au/"
+                  class="article-button"
+                >
+                  Visit PETspot's Website
+                </a>
               </div>
             </details>
 

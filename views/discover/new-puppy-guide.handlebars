@@ -62,7 +62,7 @@
     </div>
 
     <div id="article">
-      <article id="rightPanel">
+      <article id="rightPanel" itemscope itemtype="https://schema.org/Article">
         <header class="article-header copy">
           <p class="edit-details" style="margin-bottom: 30px">
             <a
@@ -73,40 +73,48 @@
             </a>
           </p>
 
-          <h1 id="top" class="title-1">New Puppy Guide</h1>
+          <h1 id="top" class="title-1" itemprop="name">New Puppy Guide</h1>
 
           <div class="article-date">
             Last updated
-            <time datetime="2021-02-24">24 February, 2021</time>
+            <time datetime="2021-02-24" itemprop="datePublished">24 February,
+              2021</time>
           </div>
 
           <p>
             <b>
-              This article is written by Pet Circle veterinarian,
+              This article is written by
+              <span itemprop="publisher">Pet Circle</span>
+              veterinarian,
               <a
                 href="https://storage.googleapis.com/discover/vet-profile-teagan-lever"
               >
-                <span id="article-author">
+                <span id="article-author" itemprop="author">
                   Dr Teagan Lever, BVSc (Hons)
                 </span>
               </a>
             </b>
           </p>
 
-          <p>
-            So you've decided to add a new member to your fur family,
-            congratulations! Bringing home a new puppy is an exciting time and
-            there is lots of fun in store. Whether you're a first time puppy
-            parent or adding to an existing fur family there is plenty to
-            consider.
-          </p>
+          <div
+            style="display: flex; display: contents; flex-direction: column"
+            itemprop="description"
+          >
+            <p>
+              So you've decided to add a new member to your fur family,
+              congratulations! Bringing home a new puppy is an exciting time and
+              there is lots of fun in store. Whether you're a first time puppy
+              parent or adding to an existing fur family there is plenty to
+              consider.
+            </p>
 
-          <p>
-            If you're feeling overwhelmed with your new puppy, or you don't know
-            where to start - take a read through our full guide. We've put
-            together this comprehensive new puppy owner checklist to help you
-            give your little one the best possible start in life.
-          </p>
+            <p>
+              If you're feeling overwhelmed with your new puppy, or you don't
+              know where to start - take a read through our full guide. We've
+              put together this comprehensive new puppy owner checklist to help
+              you give your little one the best possible start in life.
+            </p>
+          </div>
 
           <p>
             And don't forget, we offer a free
@@ -117,83 +125,14 @@
             extra puppy care advice!
           </p>
 
+          <p>
+            Still deciding which puppy is right for you? Discover if you are
+            <a href="#ready">ready for a new puppy</a>
+            and get the expert advice you need to choose the right puppy and
+            give them a Better Start.
+          </p>
+
           <div class="row">
-            <div class="col-sm-6">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="read-more-link article-read-more">
-                    <b>Need supplies for your new puppy?</b>
-                    Check out our
-                    <a href="https://storage.googleapis.com/the-puppy-box">
-                      Puppy Starter Pack
-                    </a>
-                    , - a complete value pack put together by our vets,
-                    containing premium food, parasite prevention, toys, treats,
-                    training aids, bedding, and more! Filled with up to $330
-                    worth of products, our discounted price (starting at $189)
-                    makes for incredible value! These hampers are available in
-                    different sizes - for small, medium, or large breed puppies,
-                    and are also purchasable in a smaller
-                    <a
-                      href="https://storage.googleapis.com/product/the-puppy-everyday-box"
-                    >
-                      Everyday Box
-                    </a>
-                    for ongoing maintenance.
-                  </p>
-                </div>
-
-                <div class="col-sm-6">
-                  <p class="edit-details" style="margin-bottom: 30px">
-                    <a
-                      href="https://storage.googleapis.com/product/the-puppy-starter-box"
-                      class="article-button"
-                    >
-                      The Puppy Starter Box
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://storage.googleapis.com/product/the-puppy-starter-box"
-                    >
-                      <img
-                        src="./new-puppy-guide_files/the-puppy-starter-box.png"
-                        alt=""
-                      />
-                    </a>
-                  </p>
-                </div>
-
-                <div class="col-sm-6">
-                  <p class="edit-details" style="margin-bottom: 30px">
-                    <a
-                      href="https://storage.googleapis.com/product/the-puppy-everyday-box"
-                      class="article-button"
-                    >
-                      The Puppy Everyday Box
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://storage.googleapis.com/product/the-puppy-everyday-box"
-                    >
-                      <img
-                        src="./new-puppy-guide_files/the-puppy-everyday-box.png"
-                        alt=""
-                      />
-                    </a>
-                  </p>
-                </div>
-              </div>
-
-              <p class="edit-details" style="margin-bottom: 30px">
-                <a
-                  href="https://storage.googleapis.com/puppy"
-                  class="article-button"
-                >
-                  Shop All Puppy Supplies Now
-                </a>
-              </p>
-            </div>
-
             <div class="col-sm-6">
               <iframe
                 title="New Puppy? 10 things you NEED to know! - on YouTube"
@@ -364,6 +303,12 @@
                   </a>
                 </li>
 
+                <li>
+                  <a href="#ready">
+                    Are you ready for a puppy?
+                  </a>
+                </li>
+
                 <li><hr /></li>
 
                 <li><a href="#top">Back to top</a></li>
@@ -372,155 +317,6 @@
           </aside>
 
           <div class="article-content copy">
-            <details class="article-section" open>
-              <summary>
-                <h2 id="ready" class="title-1">Are you ready for a puppy?</h2>
-              </summary>
-
-              <div class="article-section-inner">
-                <div class="article-row">
-                  <div class="article-col">
-                    <p>
-                      While the desire to hear the pitter patter of little puppy
-                      feet can be strong, it's important to pause and make sure
-                      that now is the right time. Puppies are a lot of work and
-                      you'll need plenty of patience and time to give them the
-                      best start in life.
-                    </p>
-
-                    <p>
-                      Remember that a puppy is for life and that cute little
-                      ball of fluff will soon grow into an adult dog with a
-                      lifespan of 10 to 20 years!
-                    </p>
-
-                    <h3>How to choose a dog breed that suits you</h3>
-
-                    <p>
-                      Wondering how to choose the best dog breed for your
-                      family? When choosing a breed, think about your home and
-                      lifestyle to determine what size and type of dog may be
-                      the best fit for you. If you have your heart set on a
-                      particular breed of dog, be sure to do your research
-                      before you commit. Purebred dogs in particular can be
-                      predisposed to a number of genetic health conditions and
-                      it pays to be well informed before you bring one home.
-                    </p>
-
-                    <p class="read-more-link article-read-more">
-                      For more tips read
-                      <a
-                        href="https://storage.googleapis.com/discover/how-to-choose-a-dog-breed"
-                      >
-                        How to Choose a Dog Breed That's Right for You
-                      </a>.
-                    </p>
-
-                    <h4>Where to look and what to look for</h4>
-
-                    <p>
-                      If you choose to go down the route of obtaining your pup
-                      from a breeder, be selective about who you contact.
-                      Despite tougher regulations, puppy farms still operate in
-                      Australia and should be avoided at all costs. A puppy farm
-                      is a large scale breeding operation where large numbers of
-                      dogs are kept in inhumane, intensive conditions (eg.
-                      caged). Puppy farms are run purely with a focus on profit
-                      at the expense of the dogs' wellbeing and are widely
-                      condemned by veterinarians and animal welfare groups.
-                    </p>
-
-                    <p>
-                      A responsible dog breeder will put the health and
-                      wellbeing of their breeding dogs first. They ensure that
-                      the dogs and pups are fed a good quality diet and kept up
-                      to date with all healthcare needs. Good breeders also
-                      screen dogs for any known inherited defects prior to
-                      breeding to avoid passing these on to the puppies.
-                    </p>
-                    <p>
-                      Wherever possible if you are considering purchasing a pup
-                      from a breeder, ask to come and visit and meet them and
-                      the parents in person. Not only will meeting the parents
-                      and pups give you a better idea of their temperament, it
-                      will also allow you to gauge the kind of environment your
-                      pup is being bred and raised in.
-                    </p>
-
-                    <p>
-                      When viewing a puppy, ask the breeder for evidence of
-                      their microchipping and vaccination status, check how
-                      often they have been wormed and ask if any screening (such
-                      as hip and elbow scoring or genetic testing) has been
-                      performed on the pups or their parents.
-                    </p>
-                  </div>
-
-                  <div class="article-col">
-                    <img
-                      src="./new-puppy-guide_files/separation-anxiety-feature3.jpg"
-                      alt=""
-                    />
-
-                    <div class="article-special-block">
-                      <h6>Adopt, don't shop</h6>
-
-                      <p>
-                        Every year in Australia thousands of dogs and cats are
-                        surrendered to animal shelters and pounds, with many of
-                        these animals euthanized because a suitable home cannot
-                        be found.
-                      </p>
-
-                      <p>
-                        Before heading to a pet store or breeder, consider
-                        whether you could instead offer a loving home to a puppy
-                        or adult dog in need. Dogs, puppies and other pets are
-                        available for adoption from the
-                        <a
-                          target="_blank"
-                          href="https://www.rspca.org.au/"
-                        >RSPCA</a>,
-                        <a target="_blank" href="https://www.awla.org.au/">
-                          Animal Welfare League
-                        </a>,
-                        <a target="_blank" href="https://www.petrescue.com.au/">
-                          PetRescue
-                        </a>
-                        and other local rescue organisations.
-                      </p>
-                    </div>
-
-                    <div class="article-special-block">
-                      <p>
-                        Check out
-                        <a href="https://thepetspot.com.au/">The Pet Spot</a>
-                        - This website focuses on promoting
-                        <b>verified, ethical breeders</b>.
-                      </p>
-                      <p>
-                        PETspot brings transparency to the process of finding a
-                        puppy, and is the first Australian marketplace to use
-                        strict vetting processes that helps simplify finding a
-                        trusted breeder. This provides peace of mind that the
-                        pets purchased have been raised in loving, nurturing
-                        conditions.
-                      </p>
-                      <p>
-                        PETspot is also the first platform to provide dog
-                        breeder reviews. The pet community is given a voice,
-                        with each user able to review recent experiences with
-                        breeders, shelters, and services.
-                      </p>
-                      <a target="_blank" href="https://thepetspot.com.au/">
-                        Visit PETspot.com.au
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
             <details class="article-section" open>
               <summary>
                 <h2 id="shop" class="title-1">
@@ -663,6 +459,82 @@
                         The Puppy Box</a>!
                     </p>
                   </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="read-more-link article-read-more">
+                      <b>Need supplies for your new puppy?</b>
+                      Check out our
+                      <a href="https://storage.googleapis.com/the-puppy-box">
+                        Puppy Starter Pack
+                      </a>
+                      , - a complete value pack put together by our vets,
+                      containing premium food, parasite prevention, toys,
+                      treats, training aids, bedding, and more! Filled with up
+                      to $330 worth of products, our discounted price (starting
+                      at $189) makes for incredible value! These hampers are
+                      available in different sizes - for small, medium, or large
+                      breed puppies, and are also purchasable in a smaller
+                      <a
+                        href="https://storage.googleapis.com/product/the-puppy-everyday-box"
+                      >
+                        Everyday Box
+                      </a>
+                      for ongoing maintenance.
+                    </p>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <p class="edit-details" style="margin-bottom: 30px">
+                      <a
+                        href="https://storage.googleapis.com/product/the-puppy-starter-box"
+                        class="article-button"
+                      >
+                        The Puppy Starter Box
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://storage.googleapis.com/product/the-puppy-starter-box"
+                      >
+                        <img
+                          src="./new-puppy-guide_files/the-puppy-starter-box.png"
+                          alt=""
+                        />
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <p class="edit-details" style="margin-bottom: 30px">
+                      <a
+                        href="https://storage.googleapis.com/product/the-puppy-everyday-box"
+                        class="article-button"
+                      >
+                        The Puppy Everyday Box
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://storage.googleapis.com/product/the-puppy-everyday-box"
+                      >
+                        <img
+                          src="./new-puppy-guide_files/the-puppy-everyday-box.png"
+                          alt=""
+                        />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <p class="edit-details" style="margin-bottom: 30px">
+                    <a
+                      href="https://storage.googleapis.com/puppy"
+                      class="article-button"
+                    >
+                      Shop All Puppy Supplies Now
+                    </a>
+                  </p>
                 </div>
 
                 <p class="read-more-link article-read-more">
@@ -3523,6 +3395,155 @@
                     The Importance of Socialisation
                   </a>.
                 </p>
+              </div>
+            </details>
+
+            <details class="article-section" open>
+              <summary>
+                <h2 id="ready" class="title-1">Are you ready for a puppy?</h2>
+              </summary>
+
+              <div class="article-section-inner">
+                <div class="article-row">
+                  <div class="article-col">
+                    <p>
+                      While the desire to hear the pitter patter of little puppy
+                      feet can be strong, it's important to pause and make sure
+                      that now is the right time. Puppies are a lot of work and
+                      you'll need plenty of patience and time to give them the
+                      best start in life.
+                    </p>
+
+                    <p>
+                      Remember that a puppy is for life and that cute little
+                      ball of fluff will soon grow into an adult dog with a
+                      lifespan of 10 to 20 years!
+                    </p>
+
+                    <h3>How to choose a dog breed that suits you</h3>
+
+                    <p>
+                      Wondering how to choose the best dog breed for your
+                      family? When choosing a breed, think about your home and
+                      lifestyle to determine what size and type of dog may be
+                      the best fit for you. If you have your heart set on a
+                      particular breed of dog, be sure to do your research
+                      before you commit. Purebred dogs in particular can be
+                      predisposed to a number of genetic health conditions and
+                      it pays to be well informed before you bring one home.
+                    </p>
+
+                    <p class="read-more-link article-read-more">
+                      For more tips read
+                      <a
+                        href="https://storage.googleapis.com/discover/how-to-choose-a-dog-breed"
+                      >
+                        How to Choose a Dog Breed That's Right for You
+                      </a>.
+                    </p>
+
+                    <h4>Where to look and what to look for</h4>
+
+                    <p>
+                      If you choose to go down the route of obtaining your pup
+                      from a breeder, be selective about who you contact.
+                      Despite tougher regulations, puppy farms still operate in
+                      Australia and should be avoided at all costs. A puppy farm
+                      is a large scale breeding operation where large numbers of
+                      dogs are kept in inhumane, intensive conditions (eg.
+                      caged). Puppy farms are run purely with a focus on profit
+                      at the expense of the dogs' wellbeing and are widely
+                      condemned by veterinarians and animal welfare groups.
+                    </p>
+
+                    <p>
+                      A responsible dog breeder will put the health and
+                      wellbeing of their breeding dogs first. They ensure that
+                      the dogs and pups are fed a good quality diet and kept up
+                      to date with all healthcare needs. Good breeders also
+                      screen dogs for any known inherited defects prior to
+                      breeding to avoid passing these on to the puppies.
+                    </p>
+                    <p>
+                      Wherever possible if you are considering purchasing a pup
+                      from a breeder, ask to come and visit and meet them and
+                      the parents in person. Not only will meeting the parents
+                      and pups give you a better idea of their temperament, it
+                      will also allow you to gauge the kind of environment your
+                      pup is being bred and raised in.
+                    </p>
+
+                    <p>
+                      When viewing a puppy, ask the breeder for evidence of
+                      their microchipping and vaccination status, check how
+                      often they have been wormed and ask if any screening (such
+                      as hip and elbow scoring or genetic testing) has been
+                      performed on the pups or their parents.
+                    </p>
+                  </div>
+
+                  <div class="article-col">
+                    <img
+                      src="./new-puppy-guide_files/separation-anxiety-feature3.jpg"
+                      alt=""
+                    />
+
+                    <div class="article-special-block">
+                      <h6>Adopt, don't shop</h6>
+
+                      <p>
+                        Every year in Australia thousands of dogs and cats are
+                        surrendered to animal shelters and pounds, with many of
+                        these animals euthanized because a suitable home cannot
+                        be found.
+                      </p>
+
+                      <p>
+                        Before heading to a pet store or breeder, consider
+                        whether you could instead offer a loving home to a puppy
+                        or adult dog in need. Dogs, puppies and other pets are
+                        available for adoption from the
+                        <a
+                          target="_blank"
+                          href="https://www.rspca.org.au/"
+                        >RSPCA</a>,
+                        <a target="_blank" href="https://www.awla.org.au/">
+                          Animal Welfare League
+                        </a>,
+                        <a target="_blank" href="https://www.petrescue.com.au/">
+                          PetRescue
+                        </a>
+                        and other local rescue organisations.
+                      </p>
+                    </div>
+
+                    <div class="article-special-block">
+                      <p>
+                        Check out
+                        <a href="https://thepetspot.com.au/">The Pet Spot</a>
+                        - This website focuses on promoting
+                        <b>verified, ethical breeders</b>.
+                      </p>
+                      <p>
+                        PETspot brings transparency to the process of finding a
+                        puppy, and is the first Australian marketplace to use
+                        strict vetting processes that helps simplify finding a
+                        trusted breeder. This provides peace of mind that the
+                        pets purchased have been raised in loving, nurturing
+                        conditions.
+                      </p>
+                      <p>
+                        PETspot is also the first platform to provide dog
+                        breeder reviews. The pet community is given a voice,
+                        with each user able to review recent experiences with
+                        breeders, shelters, and services.
+                      </p>
+                      <a target="_blank" href="https://thepetspot.com.au/">
+                        Visit PETspot.com.au
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </details>
 

@@ -23634,23 +23634,31 @@ html > body {
 
 .article-section > summary {
   cursor: pointer;
-  background: #f5f6f8;
+  /* background: #f5f6f8; */
+  background: #016773;
   padding: 20px;
   border-radius: 5px;
 }
 
 .article-section > summary > .title-1 {
   font-size: 40px !important;
+  /* color: #016773 !important; */
+  color: #fff !important;
 }
 
-.article-section[open] {
-  border-radius: 5px 0px 0px 5px;
+.article-section[open] > summary {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.article-section img {
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .article-section-inner {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #c6cfd0;
+  /* border-top: 1px solid #c6cfd0; */
   padding: 20px;
 }
 
